@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>火车驶向云外，梦安魂于九霄</title>
+  
+  <subtitle>一代人终将老去，但总有人正年轻</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://yimin7.github.io/"/>
+  <updated>2021-06-28T03:22:50.869Z</updated>
+  <id>https://yimin7.github.io/</id>
+  
+  <author>
+    <name>Yimin Tan</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World!</title>
+    <link href="https://yimin7.github.io/wiki/Hello%20world/"/>
+    <id>https://yimin7.github.io/wiki/Hello world/</id>
+    <published>2021-06-24T11:43:35.000Z</published>
+    <updated>2021-06-28T03:22:50.869Z</updated>
+    
+    <content type="html"><![CDATA[<p>你好<br>Hello world<br>Hola<br>Bonjour<br>Привет<br>Olá<br>Halo yang disana<br>Hallo<br>こんにちは<br>안녕하십니까<br>xin chào</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;你好&lt;br&gt;Hello world&lt;br&gt;Hola&lt;br&gt;Bonjour&lt;br&gt;Привет&lt;br&gt;Olá&lt;br&gt;Halo yang disana&lt;br&gt;Hallo&lt;br&gt;こんにちは&lt;br&gt;안녕하십니까&lt;br&gt;xin chào&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
