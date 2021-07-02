@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yimin7.github.io/"/>
-  <updated>2021-06-28T03:22:50.869Z</updated>
+  <updated>2021-07-02T07:17:24.693Z</updated>
   <id>https://yimin7.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Command</title>
+    <link href="https://yimin7.github.io/wiki/command/"/>
+    <id>https://yimin7.github.io/wiki/command/</id>
+    <published>2021-07-02T02:48:30.000Z</published>
+    <updated>2021-07-02T07:17:24.693Z</updated>
+    
+    <content type="html"><![CDATA[<p>主要记录一些不太常用但很有用，手打不易的Linux命令行命令组合</p><h3 id="curl"><a href="#curl" class="headerlink" title="curl"></a>curl</h3><h4 id="打印耗时"><a href="#打印耗时" class="headerlink" title="打印耗时"></a>打印耗时</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -s -w &#x27;\n\ntime_namelookup: %&#123;time_namelookup&#125;\ntime_connect: %&#123;time_connect&#125;\ntime_appconnect: %&#123;time_appconnect&#125;\ntime_starttransfer: %&#123;time_starttransfer&#125;\n-----\ntime_total: %&#123;time_total&#125;\n&#x27; &quot;$&#123;URL&#125;&quot;</span><br></pre></td></tr></table></figure><ul><li>-w<ul><li>time_namelookup，域名解析时间</li><li>time_connect，TCP 连接建立的时间(三次握手)</li><li>time_appconnect，SSL/SSH 等上层协议建立连接的时间，比如 connect/handshake 的时间</li><li>time_redirect，从开始到最后一个请求事务的时间</li><li>time_pretransfer，从请求开始到响应开始传输的时间</li><li>time_starttransfer，从请求开始到第一个字节将要传输的时间</li><li>time_total，这次请求花费的全部时间</li></ul></li></ul><h3 id="wget"><a href="#wget" class="headerlink" title="wget"></a>wget</h3><h4 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 下载+解压tar包到指定目录（需提前创建目录）</span></span><br><span class="line">wget $&#123;URL&#125; -O -  | tar zx --strip-components 1 -C $&#123;DIR&#125;</span><br><span class="line"><span class="meta">#</span><span class="bash"> zip不支持从stdin中读文件</span></span><br><span class="line">wget $&#123;URL&#125; &amp;&amp; unzip -qj -d $&#123;DIR&#125;</span><br></pre></td></tr></table></figure><h4 id="目录下载"><a href="#目录下载" class="headerlink" title="目录下载"></a>目录下载</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -r -np -nH -R $&#123;REJECT_LIST&#125; $&#123;URL&#125;</span><br></pre></td></tr></table></figure><ul><li>-r，遍历所有子目录</li><li>-np，不到上一层子目录去</li><li>-nH，不要将文件保存到主机名文件夹</li><li>-R<ul><li>–reject=列表，逗号分隔的要拒绝的扩展名列表</li><li>–accept-regex=REGEX，匹配接受的 URL 的正则表达式</li><li>–reject-regex=REGEX，匹配拒绝的 URL 的正则表达式</li><li>–regex-type=类型，正则类型 (posix|pcre)</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;主要记录一些不太常用但很有用，手打不易的Linux命令行命令组合&lt;/p&gt;
+&lt;h3 id=&quot;curl&quot;&gt;&lt;a href=&quot;#curl&quot; class=&quot;headerlink&quot; title=&quot;curl&quot;&gt;&lt;/a&gt;curl&lt;/h3&gt;&lt;h4 id=&quot;打印耗时&quot;&gt;&lt;a href=&quot;#打
+      
+    
+    </summary>
+    
+      <category term="碎片" scheme="https://yimin7.github.io/categories/%E7%A2%8E%E7%89%87/"/>
+    
+    
+      <category term="curl" scheme="https://yimin7.github.io/tags/curl/"/>
+    
+      <category term="wget" scheme="https://yimin7.github.io/tags/wget/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World!</title>
     <link href="https://yimin7.github.io/wiki/Hello%20world/"/>
     <id>https://yimin7.github.io/wiki/Hello world/</id>
     <published>2021-06-24T11:43:35.000Z</published>
-    <updated>2021-06-28T03:22:50.869Z</updated>
+    <updated>2021-06-28T07:14:18.577Z</updated>
     
     <content type="html"><![CDATA[<p>你好<br>Hello world<br>Hola<br>Bonjour<br>Привет<br>Olá<br>Halo yang disana<br>Hallo<br>こんにちは<br>안녕하십니까<br>xin chào</p>]]></content>
     
